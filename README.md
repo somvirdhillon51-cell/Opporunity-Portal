@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Opporunity Portal-Business Opportunities</title>
+	<meta name="description" content="Find Franchies, Distribution and partanership Opportunities matched to your budget and loction." />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrap" role="main">
+		<header>
+			<a class="brand" href="#">
+				<div class="logo">OP</div>
+				<div>
+					<div style="font-weight: 700;">Opporunity Portal</div>
+					<div style="font-size:12px; color:var(--muted);">Curated business & franchies leads</div>
+					</div>
+					</a>
+					<nav aria-label="Main nav">
+						<a href="#opps">Opporunities</a>
+						<a href="#pricing"> Pricing</a>
+						<a href="#testimoinals">Testimonials</a>
+						<a href="#contact">Contact</a>
+						<a href="#cta" href="#contact">GET STARTED</a>
+					</nav> 
+		</header>
+		<!--hero-->
+		<section class="hero" aria-label="Intro">
+			<div>
+				<h1>I m live</h1>
+				<p> Browse franchise,distribution,and partnership opportunities.Filter by investment,category and location-apply or request an introduction in one click.</p>
+				<div class="searchbar" role="search" aria-label="Search opportunities">
+					<input id="q" placeholder="Search (e.g.,cafe,retail,EV charging)" aria-label="Search keywords"/>
+					<select id="category" aria-label="Category">
+						<option value="">All Categories</option>
+						<option>Swiss watches </option>
+						<option>Beauty&Cosmetic </option>
+						<option>Gold&Diamond Jewllery</option>
+						<option>Wellness</option>
+						<option>Technology</option>
+						<option>Travel & Tourism </option>
+
+					</select>
+					<button class="btn btn-primary" id="searchBtn">Search</button>
+				</div> 
+				<div class="Filters" aria-hidden="true">
+					<div class="chip" data-range="0-500000">Under 5l</div>
+					<div class="chip" data-range="500001-2500000">Under 5l-25l</div>
+					<div class="chip" data-range="2500001-9999999999">Above 25l</div>
+					<div class="chip" id="clearFilters">Clear</div>
+				</div>
+			</div>
+			<aside style="display:flex; flex-direction:column; gap:12px;">
+				<div class="panel">
+					<div style="display:flex; justify-content:space-between; align-items:center;">
+						<div><strong>Premium</strong><div class="muted" style="font-size:13px;">Priority leads .Direct intros</div></div>
+						<div style="font-weight:900;">9,999/yr</div>
+					</div>
+					<div style="margin-top: 10px; display: flex; gap: 8px;">
+						<button class="btn-primary">Upgrade</button>
+						<button class="ghost">Learn more</button>
+					</div>
+				</div>
+				<div class="panel">
+					<div style="font-weight:700">Quick Apply</div>
+					<div class="muted" style="font-size:13px"> Apply to selected opportunities with one form</div>
+					<div style="margin-top:10px">
+						<button class="btn-primary">Start</button>
+					</div>
+				</div>
+			</aside>
+		</section>
+		<!--Main grid-->
+		<div class="main-grid">
+			<section id="opps">
+				<div style="display:flex; justify-content:center; gap:12px; margin-top:14px; align-items:center">
+					<button class="ghost" id="prev">Prev</button>
+					<div class="pill" id="pageInfo">Page 1</div>
+					<button class="ghost" id="next">Next</button>
+				</div>
+			</section>
+			<aside>
+				<div class="panel">
+					<div style="font-weight:700">Need help choosing?</div>
+					<div class="muted" style="margin-top:6px">Book a free consult and we'll shortlist 3 opporunities for you.</div>
+					<div style="margin-top:12px"><button class="btn-primary">Book consult</button></div>
+				</div>
+				<div class="panel" style="margin-top:12px">
+					<h4 style="margin:0">Top Categories</h4>
+					<div style="display:flex; gap:8px; margin-top:8px; flex-wrap: wrap;">
+						<div class="pill">swiss watches</div><div class="pill">Beauty&Cosmetic</div><div class="pill">Gold&Diamond Jewllery</div><div class="pill">Wellness</div><div class="pill">Technology</div><div class="pill">Travel & Tourism</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+		<!--Testimonials-->
+		<section id="testimoinals" class="testimoinals0" aria-label="Testimonials">
+			<div class="testimoinals"><strong>Aman . Mumbai</strong><div class="muted" style="margin-top:6px">Found a coffee franchies and opened in 3 months.</div></div>
+			<div class="testimoinals"><strong>Priya . Bangalore</strong><div class="muted" style="margin-top:6px">Distribution leads helped match my budget.</div></div>
+			<div class="testimoinals"><strong>Rohit . Delhi</strong><div class="muted" style="margin-top:6px">Premium leads helped me close in 2 weeks.</div></div>
+		</section>
+		<!--Pricing-->
+		<section id="pricing" style="margin-top:18px; display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+			<div class="panel">
+				<div style="font-weight:800">Starter</div><div class="muted">Free</div>
+				<ul class="muted">
+					<li>Browse opportunities</li><li> Save Favorites</li>
+				</ul>
+				<button class="ghost">Choose</button>
+			</div>
+			<div class="panel highlight">
+				<div style="font-weight:800">Permium</div><div>9,999 /year</div>
+				<ul>
+					<li> Verified leads</li><li>Direct introductions</li><li>Priority Support</li>
+				</ul>
+				<button class="btn-primary">Upgrade</button>
+		</div>
+		<div class="panel">
+			<div style="font-weight:800">Business</div><div class="muted">Custom</div>
+			<ul class="muted">
+				<li>Team Seats</li><li>Custom Sourcing</li>
+			</ul>
+			<button class="ghost">Contact sales </button>
+		</div>
+	</section>
+	<!--contact-->
+	<section id="contact" style="margin-top:18px; display: grid; grid-template-columns:1fr 360px; gap:12px;">
+		<div class="panel">
+			<h3 style="margin-top:0;">Contact & Quick Signup</h3>
+			<form id="contact form">
+				<div style="display:grid; gap:8px;">
+				 <input name="name" placeholder="Full name" required />
+				 <input name="email" type="email" placeholder="Email" required />
+				 <input name="phone" placeholder="Phone"required />
+				 <input name="country" type="Country" placeholder="Your Country Name" required />
+				 <input name="city" type="City" placeholder="Your City Name" required />
+				 <select name="intrest">
+				 	<option value="">I'm Intreseted in.....</option>
+				 	<option>Franchies</option><option>Distribution</option><option>Investment</option><option>List an opporunity</option>
+				 </select>
+				 <textarea name="message" rows="3" placeholder="Message(optional)"></textarea>
+				 <div style="display:flex; gap:8px">
+				 	<button class="btn-primary" type="submit">Send</button>
+				 	<button type="button" class="ghost" id="clearForm">Clear</button>
+				 </div>
+				</div>
+			</form>
+		</div>
+		<aside class="panel">
+			<h4 style="margin-top:0">How we verify</h4>
+			<div class="muted">We validate providers with background checks,direct contact, and document verification before marking leads as verified.</div>
+			<h4 style="margin-top:12px">FAQ</h4>
+			<details style="margin-top:8px"><summary>How do I list an opportunity?</summary><div class="muted" style="margin-top:8px">Use the contact form and choose 'List an opportunity'.We'll follow up.</div></details>
+			<details style="margin-top:6px"><summary>Refund policy</summary><div class="muted" style="margin-top:8px">30-day refund for annual plans if you haven't used permium leads.</div></details>
+				</div>
+		</aside>
+	</section>
+	<!--footer-->
+	<footer>
+		<div><strong>Opportunity Portal</strong><span class="muted">-curated business & franchies leads</span></div>
+		<div class="muted"><span id="year"></span>Opportunity Portal <b>.Terms</b><b> .Privacy </b></div>
+	</footer>
+</div>
+<!--Modal-->
+ <div id="modalRoots" aria-hidden="true"></div>
+ 	<script src="script.js"></script>
+</body>
+</html>
